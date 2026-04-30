@@ -157,7 +157,7 @@ export default function Contact() {
               </span>
               <div>
                 <p className="text-white font-medium">Available for new opportunities</p>
-                <p className="text-sm text-gray-400">Open to hybrid/remote positions</p>
+                <p className="text-sm text-gray-400">Open to Relocate / Onsite / Remote / Hybrid</p>
               </div>
             </div>
           </div>

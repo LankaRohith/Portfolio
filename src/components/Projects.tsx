@@ -14,7 +14,7 @@ const projects = [
     tags: ["React", "Spring Boot", "MySQL", "REST API", "Responsive Design"],
     icon: Layout,
     links: {
-      demo: "#",
+      demo: "https://business-management-web-application.onrender.com/",
       github: "https://github.com/LankaRohith/Business-Management-Web-Application",
     },
     color: "from-blue-500 to-cyan-500",
@@ -111,6 +111,17 @@ export default function Projects() {
 
                 {/* Link */}
                 <div className="flex gap-4">
+                  {project.links.demo && project.links.demo !== "#" && (
+                    <a
+                      href={project.links.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm text-white hover:text-primary-400 transition-colors"
+                    >
+                      <Layout size={16} />
+                      Live Demo
+                    </a>
+                  )}
                   <a
                     href={project.links.github}
                     target="_blank"
